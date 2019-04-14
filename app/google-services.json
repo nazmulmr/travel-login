@@ -1,0 +1,68 @@
+{  "project_info": {
+    "project_number": "513107509017",
+    "firebase_url": "https://ryoko-fc247.firebaseio.com",
+    "project_id": "ryoko-fc247",
+    "storage_bucket": "ryoko-fc247.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513107509017:android:4c8bf5b583b6b290",
+        "android_client_info": {
+          "package_name": "com.infinity.guri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513107509017-pm005eh8ecukh4jbb8qlamgbvhg6c3mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgNRc5ZwDv4Fva1O9C76d17z_8ErD3kS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513107509017-pm005eh8ecukh4jbb8qlamgbvhg6c3mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513107509017:android:c8704bc71532fecd",
+        "android_client_info": {
+          "package_name": "com.nazmul.fuji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513107509017-pm005eh8ecukh4jbb8qlamgbvhg6c3mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgNRc5ZwDv4Fva1O9C76d17z_8ErD3kS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513107509017-pm005eh8ecukh4jbb8qlamgbvhg6c3mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

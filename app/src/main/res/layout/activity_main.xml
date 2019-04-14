@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        android:background="@drawable/background"
+        tools:context=".MainActivity">
+
+
+        <!-- Login progress -->
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fuji"
+            />
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:text="Log In" />
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--               <EditText
+                                       android:layout_marginBottom="20dp"
+                                       android:layout_marginLeft="40dp"
+                                       android:id="@+id/emailET"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:hint="email"
+
+                                       />-->
+                    <AutoCompleteTextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/emailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:id="@+id/passwordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:drawableLeft="@drawable/ic_action_password"
+                        android:hint="password"
+                        android:imeActionId="6"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signin_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="loginUser"
+
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/buttonshape"
+
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="Submit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:text="Not Regrister Yet?" />
+                <Button
+                    android:id="@+id/signup_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:onClick= "regristerUser"
+
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/buttonshape"
+
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="signup"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:id="@+id/statusTV"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</layout>
